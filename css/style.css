@@ -1,149 +1,27 @@
-/* Estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+details {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-h1, h2 {
-    font-weight: 300;
-    margin-bottom: 10px;
+details:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    margin: 0 0 20px;
+details article {
+  margin-bottom: 10px;
 }
 
-/* Encabezado */
-header {
-    background-color: #5c3d8e;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+details article img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-header img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Sección de definiciones */
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section details summary {
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-section details article {
-    padding: 10px;
-}
-
-section details article p {
-    margin: 0;
-}
-
-/* Estilos para imágenes */
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para enlaces */
-section a {
-    color: #5c3d8e;
-    text-decoration: none;
-}
-
-section a:hover {
-    text-decoration: underline;
-}/* Estilos generales */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2 {
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-
-p {
-    margin: 0 0 20px;
-}
-
-/* Encabezado */
-header {
-    background-color: #5c3d8e;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-header img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Sección de definiciones */
-section {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-section details summary {
-    font-size: 1.2em;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-section details article {
-    padding: 10px;
-}
-
-section details article p {
-    margin: 0;
-}
-
-/* Estilos para imágenes */
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos para enlaces */
-section a {
-    color: #5c3d8e;
-    text-decoration: none;
-}
-
-section a:hover {
-    text-decoration: underline;
+details article img:hover {
+  transform: scale(1.1);
 }
