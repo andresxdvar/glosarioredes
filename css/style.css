@@ -1,6 +1,6 @@
 /* Estilos básicos para el cuerpo de la página */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -15,6 +15,12 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header img {
@@ -22,6 +28,11 @@ header img {
   height: auto;
   border-radius: 50%;
   margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: rotate(360deg);
 }
 
 header h1,
@@ -33,6 +44,7 @@ header h2 {
 /* Estilos para los párrafos */
 p {
   margin: 15px 0;
+  line-height: 1.6;
 }
 
 /* Estilos para los detalles y el resumen */
@@ -41,6 +53,11 @@ details {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+details:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 details summary {
@@ -48,8 +65,80 @@ details summary {
   cursor: pointer;
 }
 
+details[open] summary {
+  color: #f44336;
+}
+
 /* Estilos para el artículo */
 article {
   margin: 0;
   padding: 0;
 }
+
+/* Estilos para los encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #f44336;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #f44336;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: #f44336;
+}
+
+h6 {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: #f44336;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* Estilos para las listas */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Estilos para los botones */
+button,
+input[type
